@@ -1,3 +1,52 @@
+//JS Array Method Tutorial....
+//Using map array method...
+let arr1 = [2,3,6,8,10];
+let new__aarr = arr1.map((val) => {
+    return val**2;
+});
+console.log(new__aarr);
+//using filter array method..
+let arr2 = [5,10,15,20,25];
+let newaarr = arr2.filter((val) => {
+    return val%2 !== 0;
+});
+console.log(newaarr);
+//Using reduce method...
+let arr3 = [5,10,15,20,25];
+let new_arr = arr3.reduce((result, val) => {
+    return result + val;// it works previous value + current value.
+});
+console.log(new_arr);
+
+//Solve some problems using array methods.....
+let arr1 = [78, 80, 91, 95, 98, 75,50];
+let result1 = arr1.filter((val1) => {
+    return val1 > 90;
+});
+console.log(result1);
+
+//Solve a problem..
+let n = prompt("Enter the how many arry in there: ");
+let arr = [];
+for(let i =1; i<=n; i++){
+    arr[i-1] = i; //1(1-1=0), 2(2-1=1), 3(3-1=2) === index(i-1)....
+}
+console.log(arr);
+
+//Solve another problem...
+let result = arr.reduce((res, val) => {
+    return res + val;
+});
+console.log("Result of array: " + result);
+
+let product = arr.reduce((por, curr) => {
+    return por*curr;
+});
+console.log("Product of array: " + product);
+
+
+
+//JS String Method tutorial..
 //Slice method
 let str1 = "I want to become a web developer";
 console.log(str1.slice(3,8));//substring(start, end);
