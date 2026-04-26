@@ -14,6 +14,10 @@ let new__aarr = arr1.map((val) => {
     return val**2;
 });
 console.log(new__aarr);
+//forEach and map are work same but one things is different which map return the result but forEach did not return the result.....
+const number = [1,2,3,4,5,6];
+const result = number.forEach(n=>console.log(n));
+console.log(result);
 //using filter array method..
 let arr2 = [5,10,15,20,25];
 let newaarr = arr2.filter((val) => {
